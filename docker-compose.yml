@@ -1,0 +1,9 @@
+version: '3'
+services:
+  ubuntu:
+    container_name: srv-ubuntu
+    image: ubuntu:18.04
+    networks: 
+      - net-ubuntu
+networks:
+  net-ubuntu:
