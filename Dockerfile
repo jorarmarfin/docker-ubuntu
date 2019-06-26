@@ -41,7 +41,7 @@ ADD init.sh /init.sh
 RUN chmod 755 /*.sh
 
 # Add phpinfo script for INFO purposes
-RUN echo "<?php phpinfo();" >> /var/www/index.php; \
+RUN echo "<?php phpinfo();" >> /var/www/html/index.php; \
 service apache2 restart; \
 chown -R www-data:www-data /var/www ; 
 
