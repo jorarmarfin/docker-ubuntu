@@ -75,3 +75,16 @@ ADD config/apache/apache2.conf /etc/apache2/apache2.conf
  * Apache2
  * PHP7
  * Composer
+
+## Docker Compose
+```
+version: '3'
+services:
+  ubuntu:
+    container_name: srv-ubuntu
+    image: jorarmarfin/ubuntu:16.04
+    networks: 
+      - net-ubuntu
+networks:
+  net-ubuntu:
+  ```
