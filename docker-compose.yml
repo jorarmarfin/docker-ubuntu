@@ -5,5 +5,6 @@ services:
     image: jorarmarfin/ubuntu:16.04
     networks: 
       - net-ubuntu
+    tty: true
 networks:
   net-ubuntu:
