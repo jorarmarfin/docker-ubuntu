@@ -5,7 +5,7 @@ ENV TERM=xterm
 ENV DEBIAN_FRONTEND noninteractive
 
 RUN apt-get update && apt-get -y upgrade; \
-apt-get install -y vim python3 wget;
+apt-get install -y vim python3 wget cron;
 
 # Init
 ADD init.sh /init.sh
