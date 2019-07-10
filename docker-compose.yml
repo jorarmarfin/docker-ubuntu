@@ -6,5 +6,11 @@ services:
     networks: 
       - net-ubuntu
     tty: true
+  ubuntu:
+    container_name: srv-supervisor
+    image: jorarmarfin/ubuntu:16.04
+    networks: 
+      - net-ubuntu
+    tty: true
 networks:
   net-ubuntu:
