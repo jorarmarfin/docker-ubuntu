@@ -8,7 +8,7 @@ EXPOSE 9001
 EXPOSE 80
 
 RUN apt-get update && apt-get -y upgrade; \
-apt-get install -y vim jq python3 python3-venv wget cron apache2 curl lynx-cur supervisor; \
+apt-get install -y vim jq python3 python3-venv wget cron apache2 curl lynx-cur supervisor ffmpeg; \
 a2enmod rewrite; \
 a2enmod proxy; \
 a2enmod proxy_http; 
