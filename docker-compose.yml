@@ -1,14 +1,8 @@
 version: '3'
 services:
   ubuntu:
-    container_name: srv-ubuntu
-    image: jorarmarfin/ubuntu:16.04
-    networks: 
-      - net-ubuntu
-    tty: true
-  ubuntu:
     container_name: srv-supervisor
-    image: jorarmarfin/ubuntu:16.04
+    image: jorarmarfin/ubuntu:16.04-supervisor
     networks: 
       - net-ubuntu
     tty: true
